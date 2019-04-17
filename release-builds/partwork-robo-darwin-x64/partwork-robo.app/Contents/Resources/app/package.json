@@ -1,0 +1,27 @@
+{
+  "name": "partwork-robo",
+  "version": "1.0.0",
+  "description": "PartWork Robo para ler o e-social",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/app.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . partwok-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/app.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PartWork-Robô\"",
+    "package-linux": "electron-packager . partwok-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "dist": "build --linux snap"
+  },
+  "author": "Marcos Souza",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.7.9",
+    "electron-builder": "20.26.0",
+    "electron-packager": "^10.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chokidar": "^2.1.4",
+    "xml-js": "^1.6.11"
+  },
+  "linux": {
+    }
+}

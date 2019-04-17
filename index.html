@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>GCIA - Sincronizador</title>
+  </head>
+
+  <body>
+    <!-- <div class="top">
+      <button class="sync-file" type="button" id="sync" onclick="syncFiles()"> <img src="./assets/icons/arrows-circle.png" alt="Smiley face" height="42" width="42"></button>
+    </div> -->
+    <div class="header">
+        <img
+        src="./assets/icons/png/96x96.png"
+    />
+      <h1>
+        Sincronizador
+      </h1>
+    </div>
+
+    <p>
+      Selecione a pasta do seu computador que contenha os arquivos do e-social(xml).
+    </p>
+    <p>
+      Caso selecione a pasta errada, pare a monitoração e escoha uma nova pasta.
+    </p>
+
+    <button class="botao-select" type="button" id="start">Selecione a pasta</button>
+    
+    <span class="folder-path" id="messageLogger"></span>
+    <button class="botao-stop" type="button" id="stop" style="display:none;">Parar monitoração</button>
+    <span class="folder-path" id="syncManuallyLogger"></span>
+    <script src="renderer.js"></script>
+  </body>
+</html>
